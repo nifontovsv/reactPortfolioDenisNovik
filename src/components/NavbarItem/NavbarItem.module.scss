@@ -1,0 +1,13 @@
+.nav__list_item {
+	display: flex;
+}
+
+.nav__list_link {
+	text-decoration: none;
+	color: #828282;
+}
+
+.nav__list_link:hover {
+	cursor: pointer;
+	color: #000;
+}
