@@ -2,6 +2,7 @@ import React from 'react';
 import images from '../../images/main.png';
 import styles from './Main.module.scss';
 import Language from './Language/Language';
+import Description from '../common/Description/Description';
 
 function Main() {
 	return (
@@ -9,8 +10,8 @@ function Main() {
 			<div className={styles.main__info}>
 				<h1 className={styles.main__name}>Denis Novik</h1>
 				<div>
-					<p className={styles.main__info_text}>UX | UI designer </p>
-					<p className={styles.main__info_text}>24 years old, Minsk</p>
+					<Description description='UX | UI designer' />
+					<Description description='24 years old, Minsk' />
 				</div>
 				<Language />
 			</div>

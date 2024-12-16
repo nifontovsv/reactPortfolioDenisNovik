@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.module.scss';
-import Header from './components/Header/Header'
+import Header from './components/Header/Header';
 import Container from './components/common/Container/Container';
 import Main from './components/Main/Main';
 import { Routes, BrowserRouter, Route } from 'react-router';
+import About from './components/About/About';
+import ContainerGrey from './components/common/ContainerGrey/ContainerGrey';
 
 function App() {
 	return (
@@ -11,10 +13,14 @@ function App() {
 			<div className='App'>
 				<Container>
 					<Header />
-					<Routes>
+					<Main />
+					{/* <Routes>
 						<Route path='/main' element={<Main />} />
-					</Routes>
+					</Routes> */}
 				</Container>
+				<ContainerGrey>
+					<About />
+				</ContainerGrey>
 			</div>
 		</BrowserRouter>
 	);
